@@ -1,5 +1,10 @@
 /* PRODUCT LIST */
 
+.p-component{
+    padding: 0 15px;
+    padding-bottom: 50px;
+}
+
 .product-item {
     display: flex;
     align-items: center;
