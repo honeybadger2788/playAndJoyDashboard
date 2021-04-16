@@ -21,7 +21,6 @@ function App() {
   const [totalSuscripciones, setTotalSuscripciones] = useState('');
 
   const [totalUsers, setTotalUsers] = useState('');
-  //const [users, setUsers] = useState([]);
   const [lastUser, setLastUser] = useState([]);
 
   const [totalCategories, setTotalCategories] = useState('');
@@ -61,7 +60,6 @@ function App() {
     .then((response)=>{return response.json()})
     .then((result)=>{
       setTotalUsers(result.meta.total)
-      //setUsers(result.data) PREGUNTAR SI HAY QUE MOSTRAR UN LISTADO DE USUARIOS
     })
     .catch((e)=>{console.log(e)})
   }, []);
